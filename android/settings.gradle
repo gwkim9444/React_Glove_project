@@ -1,3 +1,6 @@
-rootProject.name = 'glove'
-apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+rootProject.name = 'ExampleBle'
+
 include ':app'
+
+include ':react-native-ble-manager'
+project(':react-native-ble-manager').projectDir = new File(rootProject.projectDir, '../../android')
